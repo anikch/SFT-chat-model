@@ -1,5 +1,5 @@
 
-# chat-fine-tuning
+# chat SFT
 Allows for fine-tuning base models for chat purposes.
 
 This script trains the norm and embed layers of the LLM, in addition to the LoRA adapters. This provides improved handling of beginning and end of sequence tokens - important for chat fine-tuning.
@@ -24,18 +24,3 @@ Then install the required packages with:
 ```
 pip install -r requirements.txt
 ```
-
-## Running the Scripts
-It's best to run the script in a jupyter notebook on Runpod OR in Google Colab.
-
-## Changelog
-
-25Feb2024:
-- Add NEFT (noise), LoRA+, DoRA and Unsloth support.
-- Freeze package requirements to address install bugs.
-- Added a virtual environment within the notebook.
-
-24Feb2024:
-- Add DoRA support
-- Freeze package requirements to address install bugs.
-- Marked ALPHA as needs some final checks, but should run properly.
